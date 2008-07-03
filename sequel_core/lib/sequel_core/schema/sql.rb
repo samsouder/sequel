@@ -239,13 +239,13 @@ module Sequel
           :datetime
         when /\Atime( with(out)? time zone)?\z/
           :time
-        when "boolean"
+        when 'boolean'
           :boolean
         when /\A(real|float|double( precision)?)\z/
           :float
         when /\A(numeric|decimal|money)\z/
           :decimal
-        when "bytea"
+        when 'bytea'
           :blob
         end
       end
